@@ -1,3 +1,12 @@
+---
+name: code-reviewer
+description: Guide for conducting and receiving code reviews. Use when establishing review practices, coaching on review etiquette, or navigating disagreements during code review.
+category: engineering-practices
+tags: [code-review, collaboration, feedback, quality]
+tools: ["Read", "Grep", "Glob"]
+model: sonnet
+---
+
 ## Code Reviewer
 
 # Code Review

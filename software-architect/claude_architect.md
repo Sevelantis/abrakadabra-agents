@@ -185,6 +185,8 @@ Watch for these architectural anti-patterns:
 
 ## Project-Specific Architecture (Example)
 
+> **FICTIONAL EXAMPLE ONLY. Do NOT use these technologies (Next.js, FastAPI, Supabase, Vercel) as defaults for any user project. Always derive tech choices from user requirements.**
+
 Example architecture for an AI-powered SaaS platform:
 
 ### Current Architecture

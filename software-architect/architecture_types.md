@@ -1,10 +1,17 @@
+---
+name: architecture-types
+description: Reference guide for API architecture styles (REST, GraphQL, WebSocket, Webhook, gRPC, SOAP). Use when evaluating API design choices, comparing protocol trade-offs, or explaining integration patterns.
+category: architecture
+tags: [api, rest, graphql, websocket, grpc, soap, protocols]
+tools: ["Read", "Grep", "Glob"]
+model: sonnet
+---
+
 ### Architecture Types
 # API Architecture Styles
 API architecture refers to the set of rules, protocols, and tools that dictate how software components should interact. The architecture of an API is not just about facilitating communication; it's also about ensuring that this communication is efficient, secure, and scalable.
 A well-designed API architecture can significantly enhance the performance of a system, while a poorly designed one can lead to bottlenecks, security vulnerabilities, and maintenance nightmares.
 ## Different Styles of API Architecture
-
-![](img/api/01_api_all.png)
 
 The most common API design styles:
 
@@ -18,7 +25,6 @@ The most common API design styles:
 Let's look at each protocol separately with all their pros, cons, and use cases.
 
 ## REST
-![](img/api/02_rest.png)
 
 **REST** is an architectural style that uses standard conventions and protocols, making it easy to understand and implement. Its stateless nature and use of standard HTTP methods make it a popular choice for building web-based APIs.
 
@@ -83,7 +89,6 @@ GET “/user/42”
 ```
 
 ## GraphQL
-![](img/api/03_graphQL.png)
 
 **GraphQL** offers a more flexible, robust, and efficient approach to building APIs, especially in complex systems or when the frontend needs high flexibility. It shifts some of the responsibility from the server to the client, allowing the client to specify its data requirements.
 
@@ -127,7 +132,6 @@ GET “/graphql?query=user(id:42){ name role { id name } }”
 ```
 
 ## WebSocket
-![](img/api/04_websocket.png)
 
 **WebSockets** provide a full-duplex communication channel over a single, long-lived connection, allowing real-time data exchange between a client and a server. This makes it ideal for interactive and high-performance web applications.
 
@@ -157,8 +161,6 @@ GET “ws://site:8181”
 HTTP/1.1 101 Switching Protocols
 
 ## Webhook
-![](img/api/05_webhook.png)
-
 
 **Webhook** is a user-defined HTTP callback triggered by specific web application events, allowing real-time data updates and integrations between different systems.
 
@@ -191,7 +193,6 @@ GET “[https://external-site/webhooks?url=http://site/service-h/api&name=name](
 ```
 
 ## RPC and gRPC
-![](img/api/06_gRPC.png)
 
 **RPC** (Remote Procedure Call) is a protocol that allows a program to execute a procedure or subroutine in another address space, enabling seamless communication and data exchange between distributed systems.
 
@@ -262,7 +263,6 @@ service UserService {
 ```
 
 ## SOAP
-![](img/api/07_soap.png)
 
 **SOAP**, which stands for Simple Object Access Protocol, is a protocol for exchanging structured information to implement web services in computer networks. It's an XML-based protocol that allows programs running on disparate operating systems to communicate with each other.
 
